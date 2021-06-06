@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="Description" content="Trabajo practico sobre problemas de aplicacion de hiperbolas"/>
+		<meta name="Keywords" content="problemas de aplicacion conicas,conicas,problemas de aplicacion,Hiperbola,hiperbola"/>
+		<link rel="stylesheet" href="index.css" type="text/css"/>
+		<title>Trabajo Hiperbola</title>
+	</head>
+	<body>
+		<header>
+			<h1 id = "Titulo"><u>Trabajo practico cónicas</u></h1>	
+		</header>
+		<aside>
+			<figure name = "img">
+				<img name = "img1" src="index_img1.jpg" alt="No se pudo mostrar la imagen" width="291" height="700"/>
+				<figcaption>Torre de telecomunicaciones Cantón (China)</figcaption>
+			</figure>
+			<figure name = "img">
+				<img id = "Tk" name = "img1" src="index_img2.jpg" alt="No se pudo mostrar la imagen" width="291" height="700"/>
+				<figcaption>Torre Port Kobe (Japón)</figcaption>
+			</figure>
+		</aside>
+		<section>
+			<header name = "h">
+				<h2>Información y objetivos</h2>
+			</header>
+			<article>
+				<p>El presente informe tiene como objetivo, el desarrollo de problemas de aplicación sobre el apartado de cónicas, los cuales deben ser presentados de forma original, con claridad y evitando errores conceptuales en su resolución. 
+				</p>
+				<p>Esta modalidad innovadora de parcial, tiene como objetivo, el desarrollo de habilidades profesionales ampliamente requeridas en el mundo laboral como la creatividad, relacionada con la pauta de originalidad del proyecto, la búsqueda y la implementación de los problemas de aplicación, el correcto desarrollo de informes y trabajos, trabajo en equipo, interiorización de los conceptos de las cónicas e implementación de sus fórmulas; entre muchas otras habilidades, lo que vuelve al proyecto, un excelente desafío a llevar a cabo para los estudiantes de las ingenierías.
+				</p>
+				<p>Particularmente, el presente informe fue realizado con la tecnología de HTML5, CSS3 y subido a la red utilizando los servicios de hosting de GitHub. Los conocimientos sobre los lenguajes fueron adquiridos de forma particular, fuera de la institución, pero se adaptan perfectamente al concepto de originalidad de la propuesta, y creemos que es una buena forma de combinar conocimientos de álgebra, particularmente las cónicas, con temas intrínsecamente relacionados a la carrera de ingeniería informática. Todos los códigos utilizados para la creación de la página web, estarán en un documento a parte presentados para su visualización y corrección. 
+				</p>
+			</article>
+			<header name = "h">
+				<h2>Hipérbola</h2>
+			</header>
+			<article>
+				<p>Cuando se habla de una cónica, se hace referencia a la curva que se genera en una intersección entre un cono y un plano. La palabra cónica deriva de “cono”.
+				</p>
+				<p>Hay cuatro tipos de cónicas diferentes:</p>
+				<ul>
+					<li>Circunferencia</li>
+					<li>Parábola</li>
+					<li>Hipérbola</li>
+					<li>Elipse</li>
+				</ul>
+				<p>Este informe se basará en la llamada hipérbola.</p>
+				<p>La hipérbola se define como el lugar geométrico de los puntos cuya diferencia de distancias entre los dos puntos fijos es constante (los puntos fijos se llaman focos). En relación a la ecuación general, la cónica será una hipérbola si el signo de A, es opuesto al signo de B, y C = 0.</p>
+				<figure>
+					<img src="Ecuacion_hiperbola.png" alt="No se pudo mostrar la imagen" width="350" height="150"/>
+					<figcaption>Ecuación de la hipérbola</figcaption>
+				</figure>
+				<p>Elementos que componen a la hipérbola:</p>
+				<ul>
+					<li>Eje focal: eje donde están ubicados los focos de la misma. Se determina teniendo en cuenta que siempre es el positivo de los dos términos de la ecuación anterior. 
+					</li>
+					<li>Eje normal: eje perpendicular al eje focal. Se determina observando en la ecuación cuál de los dos términos es el negativo. 
+					</li>
+					<li>Focos: puntos fijos sobre el eje focal, cuya diferencia de distancias hacia cualquier otro punto de la curva es constante. Para hallar los focos es necesario conocer el valor C, llamado semidistancia focal, que verifica la siguiente ecuación:
+						<figure>
+							<img src="relacionABC.png" alt="C2 = A2 + B2" width="150" height="75"/>
+							<figcaption>Relación A,B,C</figcaption>
+						</figure>
+					Estos se calculan, como los puntos, partiendo desde el centro, aumentando "C" y "-C" unidades sobre el eje focal. 
+					</li>
+					<li>Centro: el centro de una hipérbola es el punto medio del segmento de línea uniendo sus focos. Se puede observar en la ecuación, donde H, es el valor de X del centro, y K, es el valor de Y. 
+					</li>
+					<li>Vértices: son los puntos extremos de la curva sobre el eje focal. Se calculan como los puntos, partiendo desde el centro, hasta “A” y "-A" unidades sobre el eje focal. 
+					</li>
+					<li>Eje real: distancia que hay entre los vértices de la curva. Se calcula mediante la ecuación: 2*A.
+					</li>
+					<li>Eje imaginario: segmento de longitud 2*B.</li>
+					<li>Lado recto: es la distancia recta del foco a ambas ramas que forman la hipérbola.
+						<figure>
+							<img src="lado_recto.png" alt="2*B2/A" width="110" height="90"/>
+							<figcaption>Ecuación lado recto</figcaption>
+						</figure>
+					</li>
+					<li>Excentricidad: la excentricidad, mide la apertura de las ramas con respecto a los ejes focales. Esta, se calcula como el cociente de C/A. Dado que C es mayor a A en todos los casos de hipérbola, la excentricidad deberá ser mayor a 1. Cuando e tiende a 1, la distancia entre C y A va a tender a 0, y por ende las ramas van a tender a unificarse, formando una recta partida.
+					</li>
+					<li>Asíntotas: son las rectas que se intersecan en el centro de la hipérbola y se acercan a las ramas al alejarse estas del centro de la misma. Para encontrarlas, teniendo al centro como un punto de ambas asíntotas, se calcula la pendiente, teniendo en cuenta que:
+						<ol>
+							<li> M = +- A/B, si eje focal = Y</li>
+							<li> M = +- B/A, si eje focal = X</li>
+						</ol>
+					Luego, se encuentra la ordenada al origen de cada una, reemplazando en el centro de la hipérbola.
+					</li>
+				</ul>
+				<p>El contenido del informe consta de dos problemas de aplicación. Se define problema de aplicación, como una incógnita acerca de una cierta entidad matemática, que debe resolverse a partir de otra entidad del mismo tipo que hay que descubrir.</p>
+				<p>A la hora de resolver un problema de aplicación es recomendable seguir una serie de pasos, que constan de cuatro fases:
+				</p>
+				<ul>
+					<li>Comprender el problema</li>
+					<li>Plantear el problema</li>
+					<li>Resolver el problema</li>
+					<li>Comprobar la solución</li>
+				</ul>
+			</article>
+			<nav>
+				<header id = "hprob">
+					<h2><u>Problemas de aplicación</u></h2>
+				</header>
+				<figure>
+						<a href="Problema de aplicacion B.html">
+						<img name = "img2" id="flright" src="Ap_1.png" alt="No se pudo mostrar la imagen" width="250" height="215"/>
+						</a>
+				</figure>
+				<figure>
+						<a href="Problema de aplicacion A.html">
+						<img name = "img2" src="Ap_2.png" alt="No se pudo mostrar la imagen" width="250" height="215"/>
+						</a>
+				</figure>
+			</nav>
+			<header name = "h">
+					<h2 >Conclusión</h2>
+			</header>
+			<article>
+				<p>En conclusión, luego de una previa investigación de la cónica hipérbola, y de los conceptos principales sobre HTML5 y CSS, se logra llevar a cabo una pagina web informativa y práctica sobre esta cónica, dotada tanto de teoría, como de ejercicios prácticos que cumplen con el objetivo, no solo el cumplimiento de este informe parcial, sino también del refuerzo de los conocimientos teóricos, la creatividad a la hora de pensar y realizar los problemas de aplicación, y la convergencia de dos sectores de la ingeniería informática, como lo son álgebra y programación, que no suelen relacionarse entre sí, por lo que con esta conclusión, damos por terminado el informe. 
+				</p>
+			</article>
+			<header name = "h">
+				<h2>Bibliografía</h2>
+			</header>
+			<article>
+				<p>Las imágenes utilizadas fueron extraídas del apartado de imágenes de Google con <small>licencia Creative Commons.</small>
+				</p>
+				<p>El material teórico consultado para la realización de los problemas de aplicación, es el teórico presentado en clase: <cite>Vigo, Patricia. Bianchetti, Luis Antonio. (Abril 2021). Hipérbola. [33]. https://ead01.ufasta.edu.ar/pluginfile.php/1135981/mod_resource/content/8/Hip%C3%A9rbola-1%C2%BAparte-apunte%20te%C3%B3rico.pdf</cite>
+				</p>
+				<p>De forma adicional, utilizamos un material extraído de: <cite>Gómez, Federico.  Pustilnik, Isabel. (8 Noviembre 2017). UTN.BA.</cite> https://aga.frba.utn.edu.ar/hiperbola/. 
+				</p>
+				<p>La pagina web ha sido realizada de forma independiente, con conocimientos previos de la tecnología HTML5 y Css, y el código de la misma estará adjuntado en un archivo externo para revisión.
+				</p>
+			</article>
+		</section>
+		<footer>
+			<p><address>Universidad FASTA, facultad de ingeniería. Catedra de Geometría analítica y algebra lineal. Trabajo practico Cónicas 2021.</address> <strong>Lucio Gabriel Paulino y Tomas Hernán Toniut.</strong><address>Mail de contacto:luchogpaulino@gmail.com</address><time datetime="2021/06/08" pubdate>2021/06/08</time>
+			</p>
+		</footer>
+	</body>
+</html>

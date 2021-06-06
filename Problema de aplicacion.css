@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+header {
+	color:antiquewhite;
+}
+h2 {
+	margin-left: 5%;
+}
+h1{
+	
+	text-align: center;
+	font-size: calc(1em + 1vw);
+	border-radius: 5px;
+	box-shadow:  1px 1px 15px;
+	background-color:#575757;
+	height: 50px;
+	width: 50%;
+	padding-top: 25px;
+	margin:15px auto;
+	margin-bottom: 50px;
+	text-shadow: grey 1px 1px 10px;
+	transition: -webkit-transform 0.5s ease-in-out 0.1s;
+}
+h1:hover {
+	transform: scale(1.1);
+	
+}
+body {
+  background-image: url("Pa_fondo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px #6A6A6A solid;
+  background-color:#CFCFCF;
+  margin: 10px 10px;
+  color:#B1B1B1;
+}
+section {
+	width: 90%;
+	margin: 15px auto;
+}
+article {
+	border: #B1B1B1 solid 3px;
+	border-radius: 5px;
+	box-shadow:black 1px 1px 15px;
+	width: 75%;
+	margin: 15px auto;
+}
+#Video {
+	width: 70%;
+	text-align: center;
+	background-color: #212121;
+}
+video {
+	background-color:rgba(130,74,75,1.00);
+	width:100%;
+	max-width:600px;	
+	border: rgba(70,70,70,1.00) solid 3px;
+}
+article:hover {
+	color:antiquewhite;
+	background-color:grey;
+}
+footer{
+	clear: both;
+	font-size: 12px;
+	text-align: left;
+	color:#272727;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+#Respuesta {
+	color:#B1B1B1;
+}
+#Valor_res:hover {
+	color:#B1B1B1;
+}
